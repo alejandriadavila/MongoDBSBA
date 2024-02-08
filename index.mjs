@@ -26,7 +26,13 @@ app.get("/", (req,res) => {
     res.send("Welcome to the API")
 })
 
-// app.use("/grades", grades)
+import accounts from "./routes/accounts.mjs"
+import customers from "./routes/customers.mjs"
+import transactions from "./routes/transctions.mjs"
+
+app.use("/accounts", accounts)
+app.use("/customers", customers)
+app.use("/transactions", transactions)
 
 // Global error handling
 app.use((err, _req, res, next) =>{
