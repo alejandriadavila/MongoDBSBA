@@ -1,0 +1,6 @@
+// Get
+// POST
+// PATCH
+// DELETE
+// DATA VALIDATION RULES
+// 
